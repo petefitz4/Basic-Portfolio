@@ -4,37 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Peter Fitzgerald Bio</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Peter Fitzgerald</h1>
-    <nav>
-    <a href="index.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-    </nav>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Peter Fitzgerald</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="portfolio">
-    <section id="main">
-      <h2>About Me</h2>
-      
-    
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Portfolio</h1>
+
+      <div class="work">
+        <img src="assets/images/terplax.jpeg" alt="terplax">
+
+        <h3>Terps Lax</h3>
+      </div>
+      <div class="work">
+        <img src="assets/images/PondHockey-2017.JPG" alt="PondHockey">
+
+        <h3>Pond Hockey</h3>
+      </div>
+      <div class="work">
+        <img src="assets/images/beerslacrosseclub_positive.png" alt="Beers Lax">
+
+        <h3>Beers Lacrosse</h3>
+      </div>
+      <div class="work">
+        <img src="assets/images/beershockeyclub_positive-01.png" alt="Beers Hockey">
+
+        <h3>Beers Hockey</h3>
+      </div>
+
     </section>
       
-    <section id="connect">
-      <aside>
+    <section class="sidebar">
+    <div id="connect">
         <h2>Connect with Me</h2>
-        <nav>
-        <img src="assets/images/facebook.png" alt="Facebook" href="https://www.facebook.com/peter.fitzgerald.7355">
-        <img src="assets/images/twitter-bird.png" alt="Twitter" href="https://twitter.com/petefitz4">
-        <img src="assets/images/LinkedIn-box.png" alt="LinkedIn" href="https://www.linkedin.com/in/peter-fitzgerald-291903/">
-      </aside>
+        
+        <a href="#"><img src="assets/images/facebook.png" class="social" alt="Facebook" href="https://www.facebook.com/peter.fitzgerald.7355"/></a>
+        <a href="#"><img src="assets/images/twitter-bird.png" class="social" alt="Twitter" href="https://twitter.com/petefitz4" /></a>
+        <a href="#"><img src="assets/images/LinkedIn-box.png" alt="LinkedIn" href="https://www.linkedin.com/in/peter-fitzgerald-291903/" /></a>
+    </div>
     </section>
-  <footer id="footer">&copy; Copyright 2017 Peter Fitzgerald</footer>
-  </div>
+    
+    <footer>
+      <div class="container">
+      Copyright &copy; 2017 Peter Fitzgerald
+      </div>
+    </footer>
 
 </body>
 
