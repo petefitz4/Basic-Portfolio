@@ -1,14 +1,3 @@
-/*Teal color (used for headings and backgrounds): #4aaaa5
-Regular font color (used for paragraphs and all text besides the headings): #777777
-Main header background color: #ffffff
-Main header border color: #cccccc
-Footer background color: #666666
-Main content background color: #ffffff
-Main content border color: #dddddd
-Fonts:
-For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
-For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
-*/
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -184,13 +173,14 @@ h3,
 
 .work img {
   width: 100%;
+  height:75%
   border: 0 none;
   opacity: 0.8;
 }
 
 .work h3 {
   position: absolute;
-  bottom: 20px;
+  bottom: 10%;
   width: 100%;
   padding: 15px;
   margin-bottom: 0;
@@ -202,6 +192,7 @@ h3,
   border-bottom: 0;
 }
 
+/*
 .auth-image {
   float: left;
   width: 200px;
@@ -209,6 +200,7 @@ h3,
   margin-top: 10px;
   margin-right: 25px;
 }
+*/
 
 /* contact page */
 
@@ -249,3 +241,29 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+/* for desktop*/
+@media screen and (max-width: 980px;) {
+    .sidebar {}
+}
+/*for tablets*/
+@media screen and (max-width: 768px) {
+    .sidebar {
+      float: center;
+    }
+}
+/*for phone in landscape*/
+@media screen and (max-width: 640px) {
+    .sidebar {
+    float: left; 
+  }
+}
+
+
+/*
+7. Make the position of the header `static` (the default positioning) when the screen is `640px` wide. 
+The header design takes up a lot of room; you don't want it to stick to the top of a small screen and leave no room for the rest of your site.
+
+8. Be sure to include the `viewport` tag in all your HTML files, otherwise your media-queries won't function as expected on mobile devices. 
+_(Hint: You won't need to use exact pixels for anything other than the container)_
+
+*/
